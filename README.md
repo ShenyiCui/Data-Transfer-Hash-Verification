@@ -19,6 +19,7 @@ This process is extremly reliable as hashes are generated from the calculation o
 03. After your selection of the root directory the program will then go through the root directory and count all the files and folders inside. If your directory is particularly big it may take up to a minute or two. No progress bar will show during this process, just be paitient and let it run.
 
 After this process is complete this screen will greet you:
+
 ![Image of Confirmed Selection](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Counting%20Files%20and%20Folders.PNG)
 
 04. Click yes if this is the intended root directory to hash. After you click on yes the hashing algorithm will search through every file and directory in the root and start to hash them. At this period of time a progress bar will appear, this process could be extremely lengthy depending on the size of the folder and the number of files you are trying to hash. Generally, this algorithm's speed is affected by the number of files it has to hash and the size of each file it has to hash with each factor being postively related to the total time it'll take to hash the entire root directory. 
@@ -29,7 +30,7 @@ After this process is complete this screen will greet you:
   - To save this hash log means a local copy of the hash you just did will be saved into ~/Application Package/01 Golden Hash Archive
   - To compare this hash log means it'll compare the hash with another hash folder generated from this program. 
 
-06. Should you choose to save this hash for later use you'll first be asked to save it under a name:
+06. Should you choose to save this hash for later use you'll first be asked to save it under a name
 
 ![Image of Name Chosing](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Save%20Hashlog%20Filename.PNG)
 
