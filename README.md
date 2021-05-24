@@ -30,7 +30,9 @@ After this process is complete this screen will greet you:
   - To compare this hash log means it'll compare the hash with another hash folder generated from this program. 
 
 06. Should you choose to save this hash for later use you'll first be asked to save it under a name:
+
 ![Image of Name Chosing](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Save%20Hashlog%20Filename.PNG)
+
 - A new directory under this name will then be created under ~/Application Package/01 Golden Hash Archive
 - Inside this directory will contain the following files:
   - Directory Log
@@ -47,3 +49,29 @@ After this process is complete this screen will greet you:
 ![Image of Saved File](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Hash%20Log.png)
 
 07. Should you choose to compare it'll automatically use the most recently hashed folder as the "reference hash" and ask you to choose the folder of a hash log. This should be one of the hash's you just created and saved to ~/Application Package/01 Golden Hash Archive at step 6. If you started by clicking on "05 Compare Hash Logs", you'll be asked to pick 2 hash log folders whereby the first will be chosen as the "reference hash".
+
+![Image Of Picking Hash Folder](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Compare%20with%20Golden%20Hash%20Archive.png)
+
+08. Next it'll give you 3 options for comparison: quick, dirty and long.
+- Quick Comparison
+  - Quick comparison will simply hash the 2 Hash Logs and compare their values, if they're the same it means that data integrity is maintained. However, if data integrity is not maintained it means that the program is unable to let you know exactly which file was corrupted. Ideal for situations when you're short of time.  
+- Dirty Comparison
+  - Dirty comparison will compare the hashes linearly line by line. If one hash doesn't match the other it'll output the affected file path, however this methodology is only suggested if you're sure that the number of files in the first hash equals the number of files and folders in the second hash. The line by line comparison will fail if one file is missing, causing cascading errors and possible false positives for corruption. 
+- Long Comparison
+  - a full comprehensive check, each hash value is combined with the file directory into a singular string and compared with every other hash value. If the hash and file path doesn't exist in the reference it'll identify it as a new file. In total a long comparison can identify deleted, new and corrupted files or folders. 
+  - A long comparison has a big O efficiency of n^2 making it extremely inefficient, a big file can take up to an hour to process. 
+
+- After the comparison has finished an output file will be shown and the comparison log will be saved to ~/Application Package/02 Comparison Log/
+
+![Image of Comparison Options](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Different%20Comparison%20Types.png)
+![Image of Comparison Long](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Compare%20Option%20Chosen.png)
+![Image of Long Comparison Progress Bar](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Folder%20Comparison%20Progress.png)
+![Image of Comparison Log](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Comparison%20Log%20Example.png)
+![Image of Comparison Log Location](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Comparison%20Log%20Location.png)
+
+- In cases where a Long comparison is needed but doing so would take too long, please use the attached excel file. This methology is the eqvuivlent to using long compare except that it would require the user to copy paste the reference hash values from "Hash Log", file directories from "Directory Log", the new hash values and the new file directories from their saved folder location or from "00 Log" as it contains the most recently hashed folder's data.
+
+![Image of Comparison on Excel](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Excel%20Comparison%20Log.png)
+
+Use Excel Features such as "Filter" to show only corrupted files and their file locations:
+![Image of Filter by Corruption](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Filter%20By%20Corruption.png)
