@@ -70,7 +70,7 @@ After this process is complete this screen will greet you:
 ![Image of Comparison Log](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Comparison%20Log%20Example.png)
 ![Image of Comparison Log Location](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Comparison%20Log%20Location.png)
 
-- In cases where a Long comparison is needed but doing so would take too long, please use the attached excel file. This methology is the eqvuivlent to using long compare except that it would require the user to copy paste the reference hash values from "Hash Log", file directories from "Directory Log", the new hash values and the new file directories from their saved folder location or from "00 Log" as it contains the most recently hashed folder's data.
+- In cases where a Long comparison is needed but doing so would take too long, please use the attached excel file. This methology is the equivalent to using long compare except that it would require the user to copy paste the reference hash values from "Hash Log", file directories from "Directory Log", the new hash values and the new file directories from their saved folder location or from "00 Log" as it contains the most recently hashed folder's data.
 
 ![Image of Comparison on Excel](https://github.com/ShenyiCui/Data-Transfer-Hash-Verification/blob/main/README%20Images/Excel%20Comparison%20Log.png)
 
